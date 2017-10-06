@@ -1,0 +1,17 @@
+---
+- name: Creating my playbook
+  hosts: "localhost" 
+
+# Strating out Task List
+
+  tasks:
+  - name: creating kunal user
+    user: name=kunal uid=4578 state=present
+
+  - name: creating sunil user
+    user: name=sunil uid=8788
+
+  - name: creating package  
+    yum: name=telnet state=present  
+
+...
